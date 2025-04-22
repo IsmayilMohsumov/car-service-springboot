@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: udemy
+    password: ''
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: 4aWJ6Q2FHQm1VZm5rQ3hXRm9kb1JoQk1rYkdxYm5rcGhQYk5EQ3hUeHdYclZh
+  expiration-ms: 3600000
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
